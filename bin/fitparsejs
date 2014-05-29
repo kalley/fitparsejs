@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var fitparsejs = require('../index.js').fitFileReader,
+    file = process.argv[process.argv.indexOf('-f') + 1],
+    fitFile = fitparsejs(file);
+
+console.log(fitFile);
